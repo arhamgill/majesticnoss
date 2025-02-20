@@ -1,0 +1,80 @@
+{
+  "nav": {
+    "logo": "Bentolio",
+    "links": [
+      {
+        "title": "Buy Next.js template",
+        "url": "https://rauftech.lemonsqueezy.com/buy/43d4f6ca-c525-497f-a77a-8148150335dc"
+      }
+    ]
+  },
+
+  "intro": {
+    "heading": "Your Strategic Growth Partner: Sustainable Innovation for Your Circular Economy",
+    "icon": "/icons/intro-icon.svg"
+  },
+
+  "portrait": {
+    "image": "/5.png"
+  },
+
+  "about": {
+    "text": "Nosa is a material scientist and engineer, spending 10+ years streamlining supply chains within several industries. Through her extensive knowledge she has impacted the end-to-end product development of £9 million worth of material worldwide",
+    "icon": "/icons/about-icon.svg"
+  },
+
+  "contact": {
+    "label": "Have some questions?",
+    "heading": "Contact <span class='italic'>me</span>",
+    "linkIcon": "/icons/arrow-icon.svg",
+    "email": "hello@rauftech.com"
+  },
+
+  "work": {
+    "projects": [
+      {
+        "title": "MATERIAL SCIENCE",
+        "url": "",
+        "media": "/10.png"
+      },
+      {
+        "title": "SMART MANUFACTURING",
+        "url": "",
+        "media": "/11.png"
+      },
+      {
+        "title": "OPREATIONS STRATEGY",
+        "url": "",
+        "media": "/12.png"
+      },
+      {
+        "title": "SUSTAINABLE DISTRIBUTION",
+        "url": "",
+        "media": "/13.png"
+      },
+      {
+        "title": "SUPPLY CHAIN",
+        "url": "",
+        "media": "/14.png"
+      }
+    ],
+    "linkIcon": "/icons/arrow-icon-black.svg"
+  },
+
+  "socials": {
+    "links": [
+      {
+        "title": "LinkedIn",
+        "url": "https://www.figma.com/@lilcoderman"
+      },
+      {
+        "title": "Service",
+        "url": "https://www.instagram.com/lilcoderman/"
+      },
+      {
+        "title": "Newsletter",
+        "url": "/newsletter"
+      }
+    ]
+  }
+}
