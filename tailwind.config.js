@@ -27,7 +27,7 @@ module.exports = {
 
       fontFamily: {
         // Replace both heading and body with Seasons font
-        heading: ['var(--font-seasons-bd)', 'serif'],
+        heading: ['var(--font-cinzelBold)', 'serif'],
         body: ['var(--font-body)', 'serif'],
       },
     },

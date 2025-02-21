@@ -1,17 +1,17 @@
 {
   "nav": {
-    "logo": "Bentolio",
+    "logo": "Nosayaba",
     "links": [
       {
-        "title": "Visit My Website",
-        "url": "https://rauftech.lemonsqueezy.com/buy/43d4f6ca-c525-497f-a77a-8148150335dc"
+        "title": "My Service Website",
+        "url": "https://iebyas.com/"
       }
     ]
   },
 
   "intro": {
     "heading": "Your Strategic Growth Partner: Sustainable Innovation for Your Circular Economy",
-    "icon": "/icons/intro-icon.svg"
+    "icon": "/icons/globe.png"
   },
 
   "portrait": {
@@ -20,7 +20,7 @@
 
   "about": {
     "text": "Nosa is a material scientist and engineer, spending 10+ years streamlining supply chains within several industries. Through her extensive knowledge she has impacted the end-to-end product development of £9 million worth of material worldwide",
-    "icon": "/icons/about-icon.svg"
+    "icon": "/icons/network.png"
   },
 
   "contact": {
@@ -65,11 +65,11 @@
     "links": [
       {
         "title": "LinkedIn",
-        "url": "https://www.figma.com/@lilcoderman"
+        "url": "https://www.linkedin.com/in/nosa-omos/"
       },
       {
         "title": "Service",
-        "url": "https://www.instagram.com/lilcoderman/"
+        "url": "https://iebyas.com/"
       },
       {
         "title": "Newsletter",

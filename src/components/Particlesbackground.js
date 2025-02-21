@@ -21,11 +21,11 @@ const ParticlesBackground = () => {
         interactivity: {
           events: {
             onClick: {
-              enable: true,
+              enable: false,
               mode: 'push',
             },
             onHover: {
-              enable: true,
+              enable: false,
               mode: 'repulse',
             },
           },
@@ -65,7 +65,7 @@ const ParticlesBackground = () => {
               enable: true,
               area: 800,
             },
-            value: 80,
+            value: 90,
           },
           opacity: {
             value: 0.5,

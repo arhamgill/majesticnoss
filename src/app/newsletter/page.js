@@ -5,13 +5,35 @@ function NewsletterPage() {
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
   const [isSuccess, setIsSuccess] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
 
-  const handleSubmit = e => {
+  const handleSubmit = async e => {
     e.preventDefault();
-    // Simulate API call
-    setIsSuccess(true);
-    setMessage('Thank you for subscribing to our newsletter!');
-    setEmail(''); // Clear the input field
+    setIsLoading(true);
+
+    try {
+      const response = await fetch('/api/subscribe', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ email }),
+      });
+
+      if (response.ok) {
+        setIsSuccess(true);
+        setMessage('Thank you for subscribing to our newsletter!');
+        setEmail('');
+      } else {
+        setIsSuccess(false);
+        setMessage('Unable to subscribe. Please try again later.');
+      }
+    } catch (error) {
+      setIsSuccess(false);
+      setMessage('Unable to subscribe. Please try again later.');
+    } finally {
+      setIsLoading(false);
+    }
   };
 
   return (
@@ -33,14 +55,16 @@ function NewsletterPage() {
               placeholder='Enter your email'
               className='w-full rounded border border-gray-300 bg-white px-4 py-3 text-text focus:border-secondary focus:outline-none'
               required
+              disabled={isLoading}
             />
           </div>
 
           <button
             type='submit'
-            className='font-seasons-reg w-full rounded bg-secondary px-6 py-3 text-white transition-opacity hover:opacity-90'
+            className='font-seasons-reg w-full rounded bg-secondary px-6 py-3 text-white transition-opacity hover:opacity-90 disabled:opacity-50'
+            disabled={isLoading}
           >
-            Subscribe
+            {isLoading ? 'Subscribing...' : 'Subscribe'}
           </button>
 
           {message && (
