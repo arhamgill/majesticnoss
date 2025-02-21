@@ -8,6 +8,7 @@ import Nav from '@/components/Nav';
 import Portrait from '@/components/Portrait';
 import Socials from '@/components/Socials';
 import Work from '@/components/Work';
+import ParticlesBackground from '@/components/Particlesbackground';
 import { useGlobalTimeline } from '@/hooks/useAnimation';
 import LoadingBar from '@/components/LoadingBar';
 import { DISABLE_LOADING_ANIMATION } from '@/config';
@@ -18,6 +19,7 @@ export default function MainGrid({ data = {} }) {
 
   return (
     <>
+      <ParticlesBackground />
       {!DISABLE_LOADING_ANIMATION && (
         <LoadingBar onFinish={() => setLoaded(true)} />
       )}
