@@ -61,7 +61,7 @@ function NewsletterPage() {
 
           <button
             type='submit'
-            className='font-seasons-reg w-full rounded bg-secondary px-6 py-3 text-white transition-opacity hover:opacity-90 disabled:opacity-50'
+            className='font-seasons-reg w-full rounded bg-secondary px-6 py-3 text-text transition-opacity hover:opacity-90 disabled:opacity-50'
             disabled={isLoading}
           >
             {isLoading ? 'Subscribing...' : 'Subscribe'}
