@@ -69,7 +69,7 @@ function NewsletterPage() {
 
           {message && (
             <div
-              className={`font-seasons-reg mt-4 text-center ${isSuccess ? 'text-green-600' : 'text-red-600'}`}
+              className={`font-seasons-reg mt-4 text-center ${isSuccess ? 'text-text' : 'text-red-600'}`}
             >
               {message}
             </div>
